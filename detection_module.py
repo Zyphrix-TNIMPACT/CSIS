@@ -1,11 +1,25 @@
 from ultralytics import YOLO
 import cv2
 import random
+import os
+import joblib
+import numpy as np
 
 class DetectionModule:
     def __init__(self, model_path="yolov8n.pt"):
-        # Load the pretrained YOLOv8 model (downloads automatically if not found)
-        self.model = YOLO(model_path)
+        # Check for trained custom models
+        if os.path.exists("ppe_custom.pt"):
+            self.model = YOLO("ppe_custom.pt")
+            print("✅ Loaded Custom PPE AI Model.")
+        else:
+            self.model = YOLO(model_path)
+            
+        try:
+            self.fire_model = joblib.load("fire_model.pkl")
+            print("✅ Loaded Custom Fire ML Model.")
+        except:
+            self.fire_model = None
+
         # COCO Classes: 0: person, 2: car, 3: motorcycle, 5: bus, 7: truck
         self.vehicle_classes = [2, 3, 5, 7]
         self.person_class = 0
@@ -84,8 +98,18 @@ class DetectionModule:
                     cv2.rectangle(frame, (x1, y1), (x2, y2), (255, 0, 0), 2)
                     cv2.putText(frame, f"Forklift ID:{track_id}", (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 0, 0), 2)
 
-        # Still simulate fire randomly for this demo as we don't have a reliable fire detection model built-in
-        if random.random() < 0.007:
-            incident_triggered = "Fire"
+        # REAL ML inference for Fire Detection
+        if self.fire_model is not None and incident_triggered is None:
+            # Resize for fast inference
+            small = cv2.resize(frame, (64, 48))
+            hsv = cv2.cvtColor(small, cv2.COLOR_BGR2HSV)
+            # Find warm/bright pixels
+            warm_mask = hsv[:, :, 2] > 150
+            pixels_to_check = hsv[warm_mask]
+            
+            if len(pixels_to_check) > 20:
+                predictions = self.fire_model.predict(pixels_to_check)
+                if np.sum(predictions) > 15: # If ML model classifies at least 15 pixels as fire
+                    incident_triggered = "Fire"
 
         return frame, persons, vehicles, helmets_missing, incident_triggered
