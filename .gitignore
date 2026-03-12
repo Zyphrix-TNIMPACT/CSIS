@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# Large binaries and media
+*.pt
+*.mp4
+*.avi
+*.mov
+
+# Databases and local states
+*.db
+*.sqlite3
+
+# OS generated files
+.DS_Store
+Thumbs.db
