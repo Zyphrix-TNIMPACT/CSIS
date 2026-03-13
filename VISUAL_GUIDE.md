@@ -1,0 +1,374 @@
+# 🎨 CSIS Visual Guide
+
+## Page-by-Page Visual Description
+
+---
+
+## 1️⃣ Splash Screen
+
+```
+┌─────────────────────────────────────────┐
+│                                         │
+│         [Scanning Light Effect]         │
+│                                         │
+│              🛡️ + 📷                    │
+│                                         │
+│               C S I S                   │
+│                                         │
+│    Cognitive Safety Intelligence        │
+│              System                     │
+│                                         │
+│    "Vision That Prevents Accidents"     │
+│                                         │
+│   AI-Powered Industrial Safety          │
+│          Monitoring                     │
+│                                         │
+│  Initializing Safety Intelligence...    │
+│  [████████████████░░░░] 80%            │
+│                                         │
+└─────────────────────────────────────────┘
+```
+
+**Colors:** Dark background (#2E2E2E), Tan accents (#D2B48C)
+**Animation:** Logo fade-in, scan effect, progress bar fill
+
+---
+
+## 2️⃣ Login Page
+
+```
+┌──────────────────┬──────────────────────┐
+│                  │                      │
+│   🏭 Factory     │   Welcome to CSIS    │
+│                  │                      │
+│   🛡️ Shield      │   Secure Access      │
+│                  │                      │
+│   📷 Camera      │   👤 [Username]      │
+│                  │                      │
+│   [AI Boxes]     │   🔒 [Password]      │
+│                  │                      │
+│   AI-Powered     │   ☑ Remember Device  │
+│   Safety         │                      │
+│   Monitoring     │   [  LOGIN  ]        │
+│                  │                      │
+│                  │   [ EMERGENCY ]      │
+│                  │                      │
+└──────────────────┴──────────────────────┘
+```
+
+**Left:** Dark with illustrations
+**Right:** White card with form
+**Animation:** Slide-in from sides, hover glow
+
+---
+
+## 3️⃣ Dashboard (Main Control Center)
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│ CSIS | Dashboard | Cameras | Incidents | Analytics | Logout │
+├──────┬────────────────────────────────────────────┬─────────┤
+│      │                                            │ ALERTS  │
+│ 📷   │  ┌──────────┐  ┌──────────┐              │         │
+│ Live │  │ Camera 1 │  │ Camera 2 │              │ ⚠️ Near │
+│      │  │  [LIVE]  │  │  [LIVE]  │              │   Miss  │
+│ 🗺️   │  │          │  │          │              │         │
+│ Zone │  │ [Video]  │  │ [Video]  │              │ 🔥 Fire │
+│      │  │ [Boxes]  │  │ [Boxes]  │              │   Alert │
+│ 🚨   │  │          │  │          │              │         │
+│ Incid│  │ 👥3  🚗1  │  │ 👥5  🚗0  │              │ ⚠️ Zone │
+│      │  │ Risk: 72 │  │ Risk: 45 │              │   Viol. │
+│ 📊   │  └──────────┘  └──────────┘              │         │
+│ Analy│                                            │         │
+│      │  ┌──────────┐  ┌──────────┐              │         │
+│      │  │ Camera 3 │  │ Camera 4 │              │         │
+│      │  │  [LIVE]  │  │  [LIVE]  │              │         │
+│      │  │ [Video]  │  │ [Video]  │              │         │
+│      │  │ Risk: 89 │  │ Risk: 28 │              │         │
+│      │  └──────────┘  └──────────┘              │         │
+│      │                                            │         │
+│      │ Recent Incidents                           │         │
+│      │ ┌────────────────────────────────┐        │         │
+│      │ │Time│Camera│Incident│Severity  │        │         │
+│      │ │10:45│Cam1 │Near Miss│Medium   │        │         │
+│      │ │10:47│Cam3 │Fire     │Critical │        │         │
+│      │ └────────────────────────────────┘        │         │
+└──────┴────────────────────────────────────────────┴─────────┘
+```
+
+**Layout:** Sidebar + Main + Alert Panel
+**Colors:** Risk scores color-coded (Green/Orange/Red)
+**Animation:** Pulsing risk meters, sliding alerts, glowing hazard zones
+
+---
+
+## 4️⃣ Camera Monitoring
+
+```
+┌─────────────────────────────────────────────────────┐
+│ Camera 1 - Production Floor        [⏸] [🔍]       │
+├──────────────────────────────────┬──────────────────┤
+│                                  │ Incident         │
+│     ┌────────────────────┐       │ Timeline         │
+│     │                    │       │                  │
+│     │   [Large Video]    │       │ 10:45 ● Near     │
+│     │                    │       │       Miss       │
+│     │   [Worker Box]     │       │         │        │
+│     │   [Vehicle Box]    │       │ 10:32 ● Zone     │
+│     │   [Hazard Zone]    │       │       Violation  │
+│     │                    │       │         │        │
+│     └────────────────────┘       │ 10:15 ● PPE      │
+│                                  │       Missing    │
+│ ┌──────┐ ┌──────┐ ┌──────┐      │         │        │
+│ │ ⚠️ 72│ │ 👥 3 │ │ 🚗 1 │      │ 09:58 ● Worker   │
+│ │ Risk │ │Worker│ │Vehicl│      │       Fall       │
+│ └──────┘ └──────┘ └──────┘      │                  │
+└──────────────────────────────────┴──────────────────┘
+```
+
+**Features:** Large feed, controls, stats, timeline
+**Animation:** Zoom transition, detection pulse, timeline slide-in
+
+---
+
+## 5️⃣ Risk Analytics
+
+```
+┌─────────────────────────────────────────────────────┐
+│ Risk Analytics Dashboard                            │
+├──────────────────────┬──────────────────────────────┤
+│ Risk Distribution    │ Near-Miss Trends             │
+│                      │                              │
+│    ╱─╲               │  20│    ▄                    │
+│   │ A │              │  15│  ▄ █ ▄                  │
+│  D╱   ╲B             │  10│▄ █ █ █ ▄                │
+│   │ C │              │   5│█ █ █ █ █ ▄              │
+│    ╲─╱               │    └─────────────            │
+│                      │    Jan Feb Mar Apr May Jun   │
+├──────────────────────┴──────────────────────────────┤
+│ Top Risk Areas                                      │
+│ Zone A ████████████████████░░░░░░░░░░░ 35%         │
+│ Zone B ████████████████░░░░░░░░░░░░░░░ 28%         │
+│ Zone C ████████████░░░░░░░░░░░░░░░░░░░ 22%         │
+│ Zone D ████████░░░░░░░░░░░░░░░░░░░░░░░ 15%         │
+├─────────────────────────────────────────────────────┤
+│ Incident Heatmap                                    │
+│ ▓▓▒▒░░▓▓▒▒░░▓▓▒▒░░▓▓▒▒░░                          │
+│ ▒▒░░▓▓▒▒░░▓▓▒▒░░▓▓▒▒░░▓▓                          │
+│ ░░▓▓▒▒░░▓▓▒▒░░▓▓▒▒░░▓▓▒▒                          │
+│ Low Risk ▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓ High Risk              │
+└─────────────────────────────────────────────────────┘
+```
+
+**Charts:** Pie, Bar, Horizontal bars, Heatmap
+**Animation:** Chart growth, bar fill, cell fade-in
+
+---
+
+## 6️⃣ Emergency Response (IERRE)
+
+```
+┌─────────────────────────────────────────────────────┐
+│                                                     │
+│              🔥 INCIDENT DETECTED                   │
+│                                                     │
+├─────────────────────────────────────────────────────┤
+│                                                     │
+│  🔥 Fire in Zone 2                                 │
+│     Production Floor - Camera 3                     │
+│                                                     │
+│     Risk Level: [ CRITICAL ]                        │
+│     Detected at: 10:47:23                          │
+│                                                     │
+├─────────────────────────────────────────────────────┤
+│  Automated Response Actions                         │
+│                                                     │
+│  ✅ Alarm Activated              [Completed]       │
+│  ✅ Supervisor Alert Sent        [Completed]       │
+│  ✅ Evacuation Notification      [Completed]       │
+│  🔄 Emergency Services Contacted [In Progress]     │
+│                                                     │
+├─────────────────────────────────────────────────────┤
+│  Emergency Protocol Active                          │
+│  ▸ All personnel evacuating from Zone 2            │
+│  ▸ Fire suppression system activated               │
+│  ▸ Emergency exits unlocked                        │
+│  ▸ Supervisor en route to location                 │
+└─────────────────────────────────────────────────────┘
+```
+
+**Colors:** Red banner, pulsing effects
+**Animation:** Banner pulse, icon scale, action slide-in
+
+---
+
+## 🎨 Color Legend
+
+```
+🟢 Green (#2ECC71)   - Safe / Low Risk
+🟠 Orange (#F39C12)  - Warning / Medium Risk
+🔴 Red (#E74C3C)     - Critical / High Risk
+🔵 Blue (#3498DB)    - Worker Detection
+🟤 Tan (#D2B48C)     - UI Accents
+⚫ Black (#2E2E2E)   - Headers / Nav
+⚪ White (#F8F6F2)   - Background
+```
+
+---
+
+## ✨ Animation Types
+
+### 1. Entrance
+- Fade in (opacity 0 → 1)
+- Slide in (x: -100 → 0)
+- Scale up (scale 0.8 → 1)
+
+### 2. Continuous
+- Pulse (opacity 0.5 ↔ 1)
+- Glow (shadow 5px ↔ 20px)
+- Rotate (0° → 360°)
+
+### 3. Interaction
+- Hover lift (y: 0 → -2px)
+- Hover glow (shadow increase)
+- Click scale (scale 1 → 0.98)
+
+### 4. Alert
+- Slide down (y: -100% → 0)
+- Shake (x: -5px ↔ 5px)
+- Flash (background pulse)
+
+---
+
+## 📐 Layout Patterns
+
+### Grid Layouts
+```
+2x2 Camera Grid:
+┌────┬────┐
+│ 1  │ 2  │
+├────┼────┤
+│ 3  │ 4  │
+└────┴────┘
+
+3-Column Stats:
+┌────┬────┬────┐
+│ A  │ B  │ C  │
+└────┴────┴────┘
+```
+
+### Sidebar Layouts
+```
+┌──┬─────────┬──┐
+│S │  Main   │A │
+│i │ Content │l │
+│d │         │e │
+│e │         │r │
+│  │         │t │
+└──┴─────────┴──┘
+```
+
+---
+
+## 🎯 Interactive Elements
+
+### Buttons
+```
+Normal:   [ Button Text ]
+Hover:    [ Button Text ] ← glow
+Active:   [ Button Text ] ← pressed
+```
+
+### Cards
+```
+Normal:   ┌─────────┐
+          │ Content │
+          └─────────┘
+
+Hover:    ┌─────────┐ ← lift + shadow
+          │ Content │
+          └─────────┘
+```
+
+### Alerts
+```
+Warning:  ⚠️ [Message] ← orange border
+Critical: 🔥 [Message] ← red border + shake
+```
+
+---
+
+## 📱 Responsive Behavior
+
+### Desktop (1200px+)
+- Full sidebar visible
+- 2x2 camera grid
+- 3-column layouts
+
+### Tablet (768-1199px)
+- Collapsible sidebar
+- 2x1 camera grid
+- 2-column layouts
+
+### Mobile (<768px)
+- Hidden sidebar (menu)
+- 1x1 camera grid
+- Single column
+
+---
+
+## 🎬 Animation Timeline
+
+### Page Load (Dashboard)
+```
+0.0s: Page structure appears
+0.1s: Camera 1 fades in
+0.2s: Camera 2 fades in
+0.3s: Camera 3 fades in
+0.4s: Camera 4 fades in
+0.5s: Risk meters start filling
+1.0s: Alerts slide in
+1.2s: Incident table rows appear
+```
+
+### Emergency Alert
+```
+0.0s: Alert appears at top
+0.3s: Slide down animation
+0.5s: Shake effect (if critical)
+2.0s: Settle in position
+```
+
+---
+
+## 🔍 Detection Overlays
+
+### Worker Detection
+```
+┌─────────┐
+│ Worker  │ ← Blue border
+│         │   Pulsing opacity
+│    👤   │
+└─────────┘
+```
+
+### Vehicle Detection
+```
+┌──────────────┐
+│   Vehicle    │ ← Orange border
+│      🚗      │   Pulsing opacity
+└──────────────┘
+```
+
+### Hazard Zone
+```
+┌──────────────┐
+│              │ ← Red border
+│   HAZARD     │   Glowing effect
+│              │   Pulsing shadow
+└──────────────┘
+```
+
+---
+
+**This visual guide helps understand the layout and design of each page!** 🎨

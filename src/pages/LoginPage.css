@@ -1,0 +1,159 @@
+.login-page {
+  display: flex;
+  height: 100vh;
+  background: var(--off-white);
+}
+
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #2E2E2E 0%, #1a1a1a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.illustration {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.factory-bg {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.shield-icon {
+  color: var(--warm-tan);
+  opacity: 0.3;
+}
+
+.camera-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--safety-green);
+}
+
+.detection-boxes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.detect-box {
+  position: absolute;
+  border: 2px solid var(--blue-detect);
+  border-radius: 4px;
+}
+
+.box-1 {
+  width: 80px;
+  height: 80px;
+  top: 20%;
+  left: 30%;
+}
+
+.box-2 {
+  width: 60px;
+  height: 60px;
+  top: 60%;
+  right: 30%;
+}
+
+.illustration-text {
+  color: white;
+  margin-top: 40px;
+}
+
+.illustration-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: var(--warm-tan);
+}
+
+.illustration-text p {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.login-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.login-card {
+  background: white;
+  padding: 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.login-header h1 {
+  font-size: 32px;
+  color: var(--charcoal-black);
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  color: #666;
+  font-size: 14px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.input-group input {
+  padding-left: 45px;
+}
+
+.remember-device {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.login-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.btn-emergency {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
